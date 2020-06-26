@@ -5,7 +5,7 @@ export default StyleSheet.create({
     container: {
         flex:1,
         paddingHorizontal: 24,
-        paddingTop: Constants.statusBarHeight +20,
+        paddingTop: Constants.statusBarHeight +20,      
     },
     header:{
         flexDirection: 'row',
@@ -15,36 +15,36 @@ export default StyleSheet.create({
     incident:{
         padding: 24,
         borderRadius: 8,
-        backgroundColor: '#fff',
+        backgroundColor: '#2A7A9F',
         marginBottom:16,
-        marginTop: 48,
+        marginTop: 48,        
     },
     incidentProperty:{
         fontSize: 14,
-        color: '#41414d',
+        color: '#fff',
         fontWeight:'bold',
         marginTop: 24,
     },
     incidentValue:{
         marginTop:8,
         fontSize:15,
-        color:'#737380',
+        color:'#fff',
     },
     contactBox:{
         padding: 24,
         borderRadius: 8,
-        backgroundColor: '#fff',
+        backgroundColor: '#2A7A9F',
         marginBottom:16,        
     },
     heroTitle:{
         fontWeight: 'bold',
         fontSize:20,
-        color: '#13131a',
+        color: '#fff',
         lineHeight: 30,
     },
     heroDescription:{
         fontSize: 15,
-        color: '#737380',
+        color: '#fff',
         marginTop: 16,
     },
     actions:{
@@ -53,7 +53,7 @@ export default StyleSheet.create({
         justifyContent: "space-between",
     },
     action:{
-        backgroundColor:'#e02041',
+        backgroundColor:'#fff',
         borderRadius: 8,
         height: 50,
         width: '48%',
@@ -61,7 +61,7 @@ export default StyleSheet.create({
         alignItems: 'center',
     },
     actionText:{
-        color: '#fff',
+        color: '#2A7A9F',
         fontSize: 15,
         fontWeight: 'bold',
     },

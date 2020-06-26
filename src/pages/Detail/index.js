@@ -2,6 +2,7 @@ import React from 'react';
 import {Feather} from '@expo/vector-icons';
 import {View, Text, Image, TouchableOpacity, Linking} from 'react-native';
 import {useNavigation, useRoute} from '@react-navigation/native';
+import Intl from 'intl';
 import * as MailComposer from 'expo-mail-composer';
 import styles from './styles';
 import logoImg from '../../assets/logo.png';
@@ -30,7 +31,7 @@ export default function Detail(){
             <View style={styles.header}>
                 <Image source={logoImg} />
                 <TouchableOpacity onPress={navigationBack}>
-                    <Feather name="arrow-left" size={28} color="#E82041" />
+                    <Feather name="arrow-left" size={28} color="#2A7A9F" />
                 </TouchableOpacity>
             </View>
             <View style={styles.incident}>

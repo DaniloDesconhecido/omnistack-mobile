@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {Feather} from '@expo/vector-icons';
 import {View, FlatList, Image, Text, TouchableOpacity} from 'react-native';
+import Intl from 'intl';
 import {useNavigation} from '@react-navigation/native'
 import logoImg from '../../assets/logo.png';
 import styles from './styles';
@@ -12,6 +13,7 @@ export default function Incidents(){
     const [total, setTotal] = useState(0);
     const [page, setPage] = useState(1);
     const [loading, setLoading] = useState(false);
+    
 
     function navigateToDetail(incident){
         navigation.navigate('Detail', {incident});
@@ -76,7 +78,7 @@ export default function Incidents(){
                             onPress={() => navigateToDetail(incident)}
                         >
                             <Text style={styles.detailsButtonText}>Ver mais detalhes</Text>
-                            <Feather name="arrow-right" size={16} color="#E02041" />
+                            <Feather name="arrow-right" size={16} color="#fff" />
                         </TouchableOpacity>
                     </View>                    
                 )}
